@@ -1,5 +1,13 @@
+import Footer from "../components/footer/Footer";
+import Header from "../components/header/Header";
+import Main from "../components/main body/Main";
+
 export default function index() {
   return (
-    <div className="flex bg-red-400 h-screen justify-center items-center text-5xl">Corbett Heating and Plumbing</div>
-  )
+    <div className="bg-red-400 h-screen">
+      <Header />
+      <Main />
+      <Footer />
+    </div>
+  );
 }
