@@ -1,12 +1,17 @@
+import About from "../components/About";
 import Footer from "../components/footer/Footer";
 import Header from "../components/header/Header";
-import Main from "../components/main body/Main";
+import Areas from "../components/areas/Areas";
 
 export default function index() {
   return (
-    <div className="bg-red-400 h-screen">
+    <div className=" min-h-screen flex flex-col">
       <Header />
-      <Main />
+      <div className=" bg-blue-600 flex-grow">
+        <About />
+        <Areas />
+        <div>Services</div>
+      </div>
       <Footer />
     </div>
   );
